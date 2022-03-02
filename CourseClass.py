@@ -1,10 +1,11 @@
 class Course:
 
-    def __init__(self,name,crn,seats,status):
+    def __init__(self,name,crn,seats,status,students):
         self.__name = name
         self.__crn = crn
         self.__seats = seats
         self.__status = status
+        self.__students = students
 
 
     def get_name(self):
@@ -18,6 +19,9 @@ class Course:
 
     def get_status(self):
         return self.__status
+
+    def get_students(self):
+        return self.__students
 
 
     def update_seat_count(self):
